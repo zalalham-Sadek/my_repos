@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="form-section">
+        <div class="container border">
+            <div class="form">
+                <form action="#" method="post">
+                    <div class="form-head">
+                        <h2>Summer Camp Registeration</h2>
+                    </div>
+
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label for="name">Full name of child</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="flex-row">
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" id="age" name="age" required>
+                            </div>
+                            <div class="form-group input-radio">
+
+                                <label>
+                                    <input type="radio" name="gender" value="male">
+                                    Maile
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="gender" value="female">
+                                    Female
+                                </label>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Full name of parent/Guardian</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Email</label>
+                            <input type="email" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Start date of Camp</label>
+                            <input type="date" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Preferred Activities</label>
+                            <div class="checkbox-group">
+                                <label>
+                                    <input type="checkbox" name="activities" value="swimming">
+                                    Swimming
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="activities" value="hiking">
+                                    Hiking
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="activities" value="arts_crafts">
+                                    Arts & Crafts
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="activities" value="sports">
+                                    Sports
+                                </label>
+                            </div>
+
+
+                        </div>
+
+                        <div class="form-group input-range">
+                            <label for="">Activity Level</label>
+                            <input type="range" id="activity-level-range" name="activity-level" min="0" max="100"
+                                value="50">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Medical Information</label>
+                            <textarea id="comments" name="comments" rows="4"></textarea>
+
+                        </div>
+
+                        <div class="form-group file-upload-group">
+                            <label for="file-upload">Upload Photo of Child</label>
+                            <div class="custom-file-wrapper">
+                                <label for="file-upload" class="custom-file-label">Choose File</label>
+                                <span class="file-name" id="file-name">No file chosen</span>
+                                <input type="file" id="file-upload" name="file-upload" accept=".jpg, .jpeg, .png, .pdf">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group " id="buttons">
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="reset" class="btn">reset</button>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

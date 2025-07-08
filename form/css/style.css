@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+#form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFE;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.border {
+    border: 1px solid #B1D6C6;
+    border-radius: 20px;
+}
+
+.container .form .form-head{
+    padding: 20px;
+}
+
+.container .form .form-head h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .form .form-body{
+    padding: 20px;
+}
+
+.container .form .form-body .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.container .form .form-body .form-group label{
+    font-weight:600;
+    margin-bottom: 5px;
+}
+.container .form .form-body .form-group input{
+    padding: 10px;
+    border: 1px solid #B9D8C9;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.container .form .form-body .flex-row{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+.flex-row .form-group {
+    flex: 1; 
+}
+.container .form .form-body .input-radio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 23px;
+}
+.container .form .form-body .input-radio label{
+    margin-right: 10px;
+    font-weight: 600;
+}
+.container .form .form-body .input-radio input[type="radio"] {
+    margin-right: 5px;
+}
+.container .form .form-body input[type="date"] {
+    width: 50%;
+    margin-right: 5px;
+}
+
+.checkbox-group {
+    display: flex;;
+    margin-top: 10px;
+    gap: 30px;
+}
+.checkbox-group label {
+    margin-right: auto;
+    font-weight: 400;
+}
+.container .form .form-body input[type="checkbox"] {
+    margin-right: 5px;
+}
+.container .form .form-body .input-range {
+  display: flex;
+    flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.container .form .form-body .input-range .input-range label {
+  white-space: nowrap;
+  font-weight: bold;
+  min-width: 120px; 
+}
+
+
+
+.container .form .form-body .input-range input[type="range"] {
+    flex: 1; 
+}
+
+.container .form .form-body textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B9D8C9;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+
+
+#file{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+#file label {
+    font-weight: 600 !important;
+    margin: 0 !important;
+}
+
+.file-upload-group{
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.file-upload-group > label{
+    margin-top: 10px;
+}
+/* ✅ تنسيق حقل رفع الملف */
+input[type="file"] {
+  font-size: 0.95rem;
+  color: #234c34;
+  border: none;
+border: none !important;}
+
+/* إخفاء input الحقيقي */
+input[type="file"] {
+  display: none;
+}
+
+/* التغليف العام */
+.custom-file-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* الزر المخصص */
+.custom-file-label {
+  background-color: #fff;
+  border: 1px solid #B9D8C9;
+  padding: 6px 16px;
+  border-radius: 6px;
+  color: #234c34;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-file-label:hover {
+  background-color: #234c34;
+  color: #fff;
+}
+
+/* اسم الملف */
+.file-name {
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+button,.btn {
+  background-color: #234c34;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 10px 5px 0 0;
+  transition: background-color 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #1a3b28;
+}
+
+
+
+
+
+
